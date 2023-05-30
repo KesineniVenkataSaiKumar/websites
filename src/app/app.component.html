@@ -1,0 +1,193 @@
+<!-- <div class="parent-container">
+  <header>
+    <div class="flex-header-container">
+      <div class="nav-dropdown" (click)="openSideNav(sideNavBar)">
+         <span class="fa-stack fa-2x">
+             <i class="fa fa-navicon"></i>
+         </span>
+      </div>
+      <div class="side-header-icon">
+         <img  src="../assets//images/Campaign-Icon1.jpg" alt="image"/>
+      </div>
+      <div class="navigation-container">
+        <p>Home</p>
+        <p>About</p>
+        <p>Issues</p>
+        <p>News</p>
+        <p>Login</p>
+        <p>Sign up</p>
+        <p>Action Center</p>
+      </div>
+      <div class="action-button">
+         <button>DONATE</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+     <div class="donate-hero-image-container">
+        <img  src="../assets//images/USFlag.jpg" alt="image"/>
+        <div class="campaign-header">
+           <h2 class="campaign-header-description">Candidate announces 2024 campaign for U.S. Senate</h2>
+           <div class="action-button">
+             <button>DONATE</button>
+           </div>
+        </div>
+        
+         <div class="form-container">
+            <h3 class="form-header">Join the team</h3>
+            <div class="name">
+               <span>Name</span>
+               <input type="text"/>
+            </div>
+            <div class="email-address">
+               <span>Email address</span>
+               <input type="text"/>
+            </div>
+            <div class="zip-code">
+               <span>ZIP</span>
+               <input type="text"/>
+            </div>
+            <div class="phone-number">
+               <span>Phone number</span>
+               <input type="text"/>
+            </div>
+            <div class="action-button">
+               <button>SUBMIT</button>
+            </div>
+         </div>
+     </div>
+  </section>
+
+   <section>
+      <div class="description-container">
+         <div class="description-content">
+            <h2 class="description-content-header">About the Candidate</h2>
+            <p class="candidate-description">The candidate has declared her candidacy for the 2024 race for United States Senator. She has succelYully achieved ballot status for the
+            2022 US Senate race by collecting well over the 45,000 signatures required. She was the only candidate to do so. over the 45,000 signatures required. She was the only candidate to do so.</p>
+            <div class="action-button">
+               <button>MORE</button>
+            </div>
+         </div>
+         <div class="image-content">
+         <img src="../assets//images/USFlag2.jpg" alt="image"/>
+         </div>
+      </div>
+   </section> 
+
+   <section>
+      <div class="carousel-container">
+         <h2 class="carousel-header">Updates from the Campaign</h2>
+         <div class="carousel-parent-container">
+            <div class="carousel">
+               <img src="../assets//images/USFlag.jpg" alt="Maria de Almeida" />
+               <blockquote class="testimonial">
+               <h2 class="carousel-text">
+                  Candidate discusses topics that matter to her constituents
+               </h2>
+                  <div class="action-button">
+                     <button>DONATE</button>
+                  </div>
+               </blockquote>
+            </div>
+            <div class="carousel">
+               <img src="../assets//images/USFlag.jpg" alt="Maria de Almeida" />
+               <blockquote class="testimonial">
+               <h2 class="carousel-text">
+                  Candidate discusses topics that matter to her constituents
+               </h2>
+                  <div class="action-button">
+                     <button>DONATE</button>
+                  </div>
+               </blockquote>
+            </div>
+            <button class="btn btn--left">
+               <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="btn-icon"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+               >
+               <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+               />
+               </svg>
+            </button>
+            <button class="btn btn--right">
+               <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="btn-icon"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+               >
+               <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+               />
+               </svg>
+            </button>
+         </div>
+      </div>
+   </section> 
+
+   <footer>
+      <div class="footer-container">
+         <div class="social-media">
+            <span class="fa-stack fa-1x">
+               <i class="fa fa-circle-thin fa-stack-2x"></i>
+               <i class="fa fa-facebook fa-stack-1x"></i>
+             </span>
+             <span class="fa-stack fa-1x">
+               <i class="fa fa-circle-thin fa-stack-2x"></i>
+               <i class="fa fa-instagram fa-stack-1x"></i>
+             </span>
+             <span class="fa-stack fa-1x">
+               <i class="fa fa-circle-thin fa-stack-2x"></i>
+               <i class="fa fa-twitter fa-stack-1x"></i>
+             </span>
+             <span class="fa-stack fa-1x">
+               <i class="fa fa-circle-thin fa-stack-2x"></i>
+               <i class="fa fa-youtube-play fa-stack-1x"></i>
+             </span>
+         </div>
+         <div class="action-button">
+            <button>DONATE</button>
+         </div>
+         <div class="footer-navigation-container">
+            <p>Home</p>
+            <p>About</p>
+            <p>Issues</p>
+            <p>Get Involved</p>
+            <p>News</p>
+         </div>
+         <h2>
+            General Campaign
+         </h2>
+         <div class="footer-disclaimer">
+            CAMPAIGN DISCLAIMER
+         </div>
+      </div>
+   </footer>
+</div>
+<div id="mySidenav" class="sidenav" #sideNavBar>
+   <i class="fa fa-close" style="font-size:24px" (click)="closenavBar(sideNavBar)"></i>
+   <a href="#">Home</a>
+   <a href="#">About</a>
+   <a href="#">Issues</a>
+   <a href="#">News</a>
+   <a href="#">Login</a>
+   <a href="#">Sign up</a>
+   <a href="#">Action Center</a>
+</div>
+ -->
+
+
+
+ <app-second></app-second>

@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.side-header-icon {
+    height: 52px;
+}
+
+.side-header-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.parent-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    gap: 24px;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.navigation-container {
+    display: flex;
+    gap: 24px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.donate-hero-image-container img {
+    height: 500px;
+    width: 100%;
+}
+
+.action-button button {
+    padding: 8px 3rem;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.donate-hero-image-container {
+    position: relative;
+}
+
+.donate-hero-image-container .campaign-header {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+
+.donate-hero-image-container h2 {
+    width: 60%;
+    color: white;
+    font-size: 32px;
+}
+
+.description-container {
+    display: flex;
+    margin: 10% 10% 0 10%;
+}
+
+.description-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.description-container .description-content {
+    padding-right: 20%;
+    margin-top: 8%; 
+    flex-basis: 50%;
+}
+
+.description-content .description-content-header {
+    color: var(--blue);
+}
+.campaign-header .campaign-header-description {
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.description-container .image-content {
+    flex-basis: 50%;
+}
+
+.description-container .description-content h2 {
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+
+.form-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid var(--red);
+    display: grid;
+    gap: 16px;
+    grid-column-gap: 52px;
+    padding: 36px;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    background: #fff;
+}
+
+.form-container .form-header {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    justify-self: center;
+    color: var(--blue);
+}
+
+.form-container .action-button {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+.form-container input {
+    margin-top: 3px;
+    border: none;
+    padding: 6px;
+    background-color: var(--background-grey);
+}
+
+.form-container .name,
+.form-container .email-address,
+.form-container .zip-code,
+.form-container .phone-number{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1500px) {
+
+    .carousel-parent-container .carousel img {
+        height: 200px;
+    }
+
+    .description-content {
+        margin-top: 15% !important;
+    }
+}
+
+.image-container img {
+    height: 100px;
+}
+
+.primary-carousel {
+    display: flex;
+}
+
+.footer-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.footer-container .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.footer-navigation-container {
+    display: flex;
+    gap: 24px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding: 24px;
+}
+
+.footer-disclaimer {
+    margin: 48px 24px;
+    border: 1PX solid var(--white);
+    padding: 3px 16px;
+}
+
+.donate-hero-image-container .campaign-header h2,
+.description-container .candidate-description {
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
+/* // carousel  */
+.carousel-container {
+    background-color: var(--background-grey);
+}
+
+.carousel-header {
+    text-align: center;
+    padding-top: 52px;
+    font-weight: 700;
+    color: var(--blue);
+ }
+
+.carousel-parent-container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel {
+    width: 800px;
+    margin: 50px auto 100px auto;
+    border-radius: 8px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .carousel img {
+    height: 175px;
+    width: 175px;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .carousel-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .btn--left {
+    left: 0;
+    top: 50%;
+
+    transform: translate(-250%, -100%) !important;
+  }
+
+  .btn--right {
+    right: 0;
+    top: 50%;
+
+    transform: translate(250%, -100%) !important;
+  }
+
+  .btn {
+    background-color: #fff;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-icon {
+    height: 34px;
+    width: 34px;
+    stroke: var(--blue);
+  }
+  
+  .carousel .carousel-text {
+      position: absolute;
+      top: 0;
+      font-size: 24px;
+      color: var(--blue);
+      font-weight: 600;
+      letter-spacing: 0.4px;
+  }
+    
+  .carousel .action-button {
+      position: absolute;
+      bottom: 0;
+  }
+
+  .flex-header-container .nav-dropdown {
+      display: none;
+  }
+
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .carousel .carousel-text {
+        font-size: 22px;
+    }
+    .carousel-parent-container {
+        width: 72%;
+    }
+  }
+
+  @media(max-width: 992px) {
+    .donate-hero-image-container .form-container {
+        position: static;
+        width: 75%;
+        border-left: none !important ;
+        border-right: none !important;
+        grid-template-columns: 1fr;
+    }
+
+    .form-container .action-button {
+      grid-row: initial;
+      width: 100%;
+    }
+
+    .form-container .action-button button {
+      width: 100%;
+      padding: 12px 3rem !important;
+    }
+
+    .form-container input {
+        padding: 12px !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .carousel .carousel-text {
+        font-size: 20px;
+        font-size: 500;
+    }
+    .carousel-parent-container {
+        width: 65%;
+    }
+
+    .carousel-parent-container .carousel:first-child {
+        display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+      .action-button button {
+        padding: 8px 2rem;
+      }
+      .flex-header-container .nav-dropdown {
+        display: inline-block !important;
+      }
+
+
+      .donate-hero-image-container img {
+          height: 350px;
+      }
+
+      .donate-hero-image-container .campaign-header {
+          left: 5% !important;
+          right: 5% !important;
+          top: 10% !important;
+      }
+
+      .campaign-header .campaign-header-description {
+          width: 95%;
+      }
+
+
+      .flex-header-container {
+        flex-direction: row-reverse;
+      }
+
+      .flex-header-container .navigation-container {
+          display: none;
+      }
+
+
+      .description-container {
+          flex-direction: row-reverse;
+          margin: 8% !important;
+          gap: 32px !important;
+      }
+
+      .description-container .description-content {
+        padding-right: 0 !important;
+        margin-top: 0 !important;
+      }
+
+      .description-content .candidate-description {
+        text-align: justify;
+      }
+
+      .description-container .image-content img {
+          height: 60% !important;
+          width: 90% !important;
+      }
+
+      .carousel-container .carousel-parent-container {
+          width: 60%;
+      }
+
+
+      /* TODO */
+      .carousel-parent-container .carousel:first-child {
+          display: none;
+      }
+  }
+
+  @media (max-width: 650px) {
+    .donate-hero-image-container .form-container {
+        width: 85%;
+    }
+
+    .carousel-container .carousel-parent-container {
+        width: 55%;
+    }
+
+    .carousel .carousel-text {
+        font-size: 18px;
+        font-size: 500;
+    }
+  }
+
+  @media (max-width: 570px) {
+
+      /* // carousel */
+    .carousel-container .carousel-parent-container {
+        width: 65% !important;
+    }
+
+    .btn--right {
+        transform: translate(150%, -100%) !important;
+    }
+
+    .btn--left {
+        transform: translate(-150%, -100%) !important;
+    }
+    
+
+    .description-container {
+        gap: 16px !important;
+    }
+
+    .description-container .image-content img {
+        height: 50% !important;
+        width: 90% !important;
+    }
+  }
+
+  @media (max-width: 500px)  {
+    .nav-dropdown {
+        text-align: right;
+    }
+
+    .description-container {
+        margin: 5% !important;
+    }
+
+    .action-button button {
+        padding: 8px 1.5rem;
+    }
+    .donate-hero-image-container .form-container {
+        width: 95%;
+    }
+
+    .description-container .image-content img {
+        height: 40% !important;
+        width: 90% !important;
+    }
+
+    .form-container input {
+        padding: 8px !important;
+    }
+
+    .footer-navigation-container {
+        font-size: 14px;
+    }
+
+    /* //Carousel  */
+    .btn--right {
+        transform: translate(120%, -100%) !important;
+    }
+
+    .btn--left {
+        transform: translate(-120%, -100%) !important;
+    }
+
+    .carousel img {
+        width: 120px !important;
+        height: 150px !important;
+    }
+
+    .carousel-text {
+        font-size: 15px !important;
+    }
+  }
+
+
+
+  /* Side Nav bar for mobile devices */
+
+  .sidenav {
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--blue);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  #mySidenav .fa.fa-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: white;
+  }
+
+  .flex-header-container .nav-dropdown:hover,
+  #mySidenav .fa.fa-close:hover {
+      cursor: pointer;
+  }
+
+  .sidenav a:hover {
+    background-color: var(--white) !important;
+    color: var(--black);
+  }
